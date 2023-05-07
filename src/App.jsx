@@ -49,8 +49,6 @@ function App() {
       });
   };
 
-
-  
   // fetch data on initial page load
   useEffect(() => {
     getData();
