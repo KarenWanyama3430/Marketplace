@@ -65,7 +65,6 @@ function App() {
         onChange={handleChange}
         className="md:w-[50%] h-12 p-2 w-[88%] mx-[6%] md:mx-[25%] rounded-md mb-12 mt-2"
       />
-      
       <div className="  ">
         {/* Conditional Loading, Prefferably use a spinner*/}
         {data != [] ? (
