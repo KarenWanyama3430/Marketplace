@@ -14,7 +14,7 @@ function App() {
   const [restore, setRestore] = useState([]);
  const [search, setSearch] = useState("");
 
-// Create reference for input field
+ // Create reference for input field
   const ref = useRef();
 
   // function to update state for search
