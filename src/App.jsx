@@ -39,7 +39,6 @@ function App() {
   }, [search]);
 
 
-
  //  fetch json data from file //todo: replace with sever fetch
   const getData = async () => {
     await fetch("/src/assets/data.json")
@@ -69,7 +68,7 @@ function App() {
       <div className="  ">
         {/* Conditional Loading, Prefferably use a spinner*/}
         {data != [] ? (
-          
+
           <div className="">
             <div className="grid mx-auto md:mx-[15%] grid-flow-row place-content-center">
               {data.map((item, index) => (
