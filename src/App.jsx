@@ -65,9 +65,11 @@ function App() {
         onChange={handleChange}
         className="md:w-[50%] h-12 p-2 w-[88%] mx-[6%] md:mx-[25%] rounded-md mb-12 mt-2"
       />
+      
       <div className="  ">
         {/* Conditional Loading, Prefferably use a spinner*/}
         {data != [] ? (
+          
           <div className="">
             <div className="grid mx-auto md:mx-[15%] grid-flow-row place-content-center">
               {data.map((item, index) => (
