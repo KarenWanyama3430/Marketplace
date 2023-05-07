@@ -12,7 +12,7 @@ function App() {
 
   const [data, setData] = useState([]);
   const [restore, setRestore] = useState([]);
-const [search, setSearch] = useState("");
+ const [search, setSearch] = useState("");
 
 // Create reference for input field
   const ref = useRef();
