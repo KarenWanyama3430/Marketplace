@@ -4,7 +4,7 @@ export function Item(props) {
 
   // destructure properties
   const { name, logo, unread } = props.item;
-
+  
   return (
     <div className="bg-white shadow-2xl shadow-gray-950/25 mx-auto rounded-lg w-[88%] md:w-[70%] h-16 mb-2 pt-5 p-6 grid grid-cols-12">
       <div className="flex justify-center items-center">
