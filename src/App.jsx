@@ -6,10 +6,10 @@ import { Item } from "./components/item";
 import { Menu } from "./components/menu";
 import { useRef } from "react";
 
-
 function App() {
 
   // Declare State 
+
   const [data, setData] = useState([]);
   const [restore, setRestore] = useState([]);
 const [search, setSearch] = useState("");
