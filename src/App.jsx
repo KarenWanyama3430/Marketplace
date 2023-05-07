@@ -37,6 +37,7 @@ function App() {
       );
     }
   }, [search]);
+  
 
 
  //  fetch json data from file //todo: replace with sever fetch
