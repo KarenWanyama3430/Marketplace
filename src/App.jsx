@@ -9,12 +9,11 @@ import { useRef } from "react";
 function App() {
 
   // Declare State 
-
   const [data, setData] = useState([]);
   const [restore, setRestore] = useState([]);
- const [search, setSearch] = useState("");
+const [search, setSearch] = useState("");
 
- // Create reference for input field
+// Create reference for input field
   const ref = useRef();
 
   // function to update state for search
@@ -40,7 +39,8 @@ function App() {
 
 
  //  fetch json data from file //todo: replace with sever fetch
-  const getData = async () => {
+ 
+ const getData = async () => {
     await fetch("/src/assets/data.json")
       .then((data) => data.json())
       .then((data) => {
@@ -63,11 +63,9 @@ function App() {
         onChange={handleChange}
         className="md:w-[50%] h-12 p-2 w-[88%] mx-[6%] md:mx-[25%] rounded-md mb-12 mt-2"
       />
-      
       <div className="  ">
         {/* Conditional Loading, Prefferably use a spinner*/}
         {data != [] ? (
-
           <div className="">
             <div className="grid mx-auto md:mx-[15%] grid-flow-row place-content-center">
               {data.map((item, index) => (
