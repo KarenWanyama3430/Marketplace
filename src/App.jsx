@@ -41,7 +41,7 @@ const [search, setSearch] = useState("");
  //  fetch json data from file //todo: replace with sever fetch
  
  const getData = async () => {
-    await fetch("/src/assets/data.json")
+    await fetch("https://www.global.mcarfix.com/api/get/all/advert/categories")
       .then((data) => data.json())
       .then((data) => {
         setData(data.message.result);
